@@ -9,6 +9,7 @@ This project is sample testing project based on the below dependencies.
 ## How to Run the Tests:
 ```
 mvn clean test
+```
 
 or setup project in an editor and run through TestRunner.java
     
