@@ -107,7 +107,7 @@ public class BorrowPage extends BasePage {
 
 	// 2. Clicking the ‘start over’ button clears the form.
 
-	@FindBy(xpath = "//button[contains(text(),'Start over')]")
+	@FindBy(xpath = "//div[@class='result__restart']/button[@class='start-over']")
 	WebElement btnstrover;
 
 	public void startoverbtn() {
@@ -144,5 +144,48 @@ public class BorrowPage extends BasePage {
 		eleTotalCreditCardsLimit.sendKeys(creditCardLimit);
 
 	}
+
+	public WebElement getEleAnnualIncome() {
+		return eleAnnualIncome;
+	}
+
+	public void setEleAnnualIncome(WebElement eleAnnualIncome) {
+		this.eleAnnualIncome = eleAnnualIncome;
+	}
+
+	public WebElement getEleOtherIncome() {
+		return eleOtherIncome;
+	}
+
+
+	public WebElement getEleMonthlyExpenses() {
+		return eleMonthlyExpenses;
+	}
+
+
+	public WebElement getEleCurrentHomeLoanRepayment() {
+		return eleCurrentHomeLoanRepayment;
+	}
+
+	public void setEleCurrentHomeLoanRepayment(WebElement eleCurrentHomeLoanRepayment) {
+		this.eleCurrentHomeLoanRepayment = eleCurrentHomeLoanRepayment;
+	}
+
+	public WebElement getEleOtherLoanRepayments() {
+		return eleOtherLoanRepayments;
+	}
+
+
+	public WebElement getEleMonthlyCommittments() {
+		return eleMonthlyCommittments;
+	}
+
+
+	public WebElement getEleTotalCreditCardsLimit() {
+		return eleTotalCreditCardsLimit;
+	}
+
+	
+	
 
 }
